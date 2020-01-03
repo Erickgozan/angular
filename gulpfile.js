@@ -48,6 +48,7 @@ gulp.task('format', ['format:changed']);
 gulp.task('lint', ['format:enforce', 'validate-commit-messages', 'tslint']);
 gulp.task('tslint', ['tools:build'], loadTask('lint'));
 gulp.task('validate-commit-messages', loadTask('validate-commit-message'));
+gulp.task('validate-commit-messages', loadTask('validate-commit-message'));
 gulp.task('source-map-test', loadTask('source-map-test'));
 gulp.task('tools:build', loadTask('tools-build'));
 gulp.task('check-cycle', loadTask('check-cycle'));
